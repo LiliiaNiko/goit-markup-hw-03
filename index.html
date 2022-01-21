@@ -16,44 +16,46 @@
 </head>
 <body class="page">
     <header class="header"> 
-        <div class="container">
+    <div class="container header-container">
       <nav class="nav">  
         <a href="/" class="logo-link">
-           WebStudio
+           Web<span>Studio</span>
         </a>
         <ul class="site-nav list">
-            <li><a href=""  class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="link-item"><a href="" class="link">Студия</a></li>
+            <li class="link-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="link-item"><a href="" class="link">Контакты</a></li>
         </ul>
-      </nav>  
-        <ul class="contacts list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+      </nav> 
+        <div class="header-connect">
+        <ul class="contacts-header list">
+            <li class="contacts-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="contacts-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
         </div>
+    </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-tile">Эффективные решения <br/> для вашего бизнеса</h1>
+            <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button type="button" class="button">Заказать услугу</button>
         </section>
         <section class="features">
             <div class="container">
             <ul class="features list">
-                <li>
+                <li class="features-item">
                     <h2 class="features-title">Внимание к деталям</h2>
                     <p class="features-text">Идейные соображения, а также <br/> начало повседневной работы по <br/> формированию позиции.</p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h2 class="features-title">Пунктуальность</h2>
                     <p class="features-text">Задача организации, в особенности <br/> же рамки и место обучения кадров <br/> влечет за собой.</p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h2 class="features-title">Планирование</h2>
                     <p class="features-text">Равным образом консультация с <br/> широким активом в значительной <br/> степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h2 class="features-title">Современные технологии</h2>
                     <p class="features-text">Значимость этих проблем настолько <br/> очевидна, что реализация плановых <br/> заданий.</p>
                 </li>
@@ -63,10 +65,10 @@
         <section class="section-about">
             <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./images/img-1.jpg" alt="человек печатает на клавиатуре" width="370"></li>
-                <li><img src="./images/img-2.jpg" alt="человек за ноутбуком держит в руке смартфон" width="370"></li>
-                <li><img src="./images/img-3.jpg" alt="человек работает на планшете" width="370"></li>
+            <ul class="work-img list">
+                <li class="img-item"><img src="./images/img-1.jpg" alt="человек печатает на клавиатуре" width="370"></li>
+                <li class="img-item"><img src="./images/img-2.jpg" alt="человек за ноутбуком держит в руке смартфон" width="370"></li>
+                <li class="img-item"><img src="./images/img-3.jpg" alt="человек работает на планшете" width="370"></li>
             </ul>
             </div>
         </section>
@@ -74,22 +76,22 @@
             <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="team list">
-                <li>
+                <li class="team-item">
                     <img class="team-img" src="./images/img-team-1.jpg" alt="мужчина с бородой и в очках улыбается" width="270">
                     <h3 class="team-title">Игорь Демьяненко</h3>
                     <p class="team-text" lang="en">Product Designer</p>
                 </li>
-                <li>
+                <li class="team-item">
                     <img class="team-img" src="./images/img-team-2.jpg" alt="девушка блондинка в очках улыбается" width="270">
                     <h3 class="team-title">Ольга Репина</h3>
                     <p class="team-text" lang="en">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="team-item">
                     <img class="team-img" src="./images/img-team-3.jpg" alt="мужчина улыбается" width="270">
                     <h3 class="team-title">Николай Тарасов</h3>
                     <p class="team-text" lang="en">Marketing</p>
                 </li>
-                <li>
+                <li class="team-item">
                     <img class="team-img" src="./images/img-team-4.jpg" alt="мужчина с бородой и в очках улыбается" width="270">
                     <h3 class="team-title">Михаил Ермаков</h3>
                     <p class="team-text" lang="en">UI Designer</p>
@@ -99,11 +101,12 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="logo-link" href="/">
-           WebStudio
+        <div class="container">
+        <a href="/" class="logo-link">
+             Web<span>Studio</span>
         </a>
         <address class="nav">
-            <ul class="contacts list">
+            <ul class="contacts-footer list">
                 <li>
                     <a class="address" href="https://goo.gl/maps/2gkyWeUbLo5GTh3J6">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
@@ -115,6 +118,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
