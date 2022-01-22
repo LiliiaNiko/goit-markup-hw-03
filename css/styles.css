@@ -109,6 +109,9 @@ body {
 .contacts-footer a:focus {
   color: var(--accent-color);
 }
+.current {
+  color: var(--accent-color);
+}
 
 /*------------------HERO------------------*/
 
@@ -116,6 +119,7 @@ body {
   color: var(--first-background-color);
   background-color: var(--second-background-color);
   text-align: center;
+  padding-bottom: -94px;
 }
 .hero-title {
   font-weight: 900;
@@ -123,11 +127,13 @@ body {
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  align-items: center;
-  padding: 200px 452px 30px 452px;
+  text-align: center;
+  padding: 200px 0 30px 0;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero .button {
-  /*font-family: inherit;*/
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
@@ -135,31 +141,11 @@ body {
   cursor: pointer;
   color: var(--first-background-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
   margin-bottom: 210px;
 }
-.filter .button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  cursor: pointer;
-  min-width: 130px;
-}
-.filter {
-  /*padding-top: 100px;*/
-  display: flex;
-  justify-content: space-around;
-  margin-right: 517px;
-  margin-left: 516px;
-  margin-bottom: 50px;
-}
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
-/*.portfolio {
-  padding-bottom: 94px;
-}*/
+
 .hero .button:hover,
 .hero .button:focus,
 .filter .button:hover,
@@ -221,11 +207,12 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.features {
-  padding-top: 94px;
-  /*padding-bottom: 94px;*/
+.features-list {
   display: flex;
   justify-content: space-between;
+}
+.features {
+  padding-top: 94px;
 }
 .features-text,
 .team-text,
@@ -241,6 +228,9 @@ body {
   line-height: calc(19 / 16);
   margin-bottom: 30px;
 }
+
+/*---------------PORTFOLIO--------------*/
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
@@ -249,7 +239,7 @@ body {
   display: flex;
   margin-right: -30px;
   flex-wrap: wrap;
-  /*margin-bottom: -30px;*/
+  margin-bottom: -30px;
 }
 .portfolio-item {
   width: calc(100% / 3 - 30px);
@@ -260,7 +250,45 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.filter .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  min-width: 73px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  border: none;
+}
+.primary-botton {
+  background-color: var(--accent-color);
+  color: var(--first-background-color);
+}
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 517px;
+  margin-left: 516px;
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.box {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  padding: 20px 24px;
+}
 /*--------------------FOOTER-----------------*/
 
 .footer {
