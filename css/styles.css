@@ -21,6 +21,8 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 button {
   cursor: pointer;
@@ -183,10 +185,6 @@ body {
 .img-item:not(:last-child) {
   margin-right: 30px;
 }
-.img-item {
-  width: 100%;
-  height: auto;
-}
 
 /*----------------FEATURES---------------*/
 
@@ -211,6 +209,10 @@ body {
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .portfolio-title {
   font-size: 18px;
